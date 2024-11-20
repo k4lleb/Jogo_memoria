@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #139092; /* Cor de fundo da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .memory-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%; /* Use 100% para garantir que o container ocupe toda a largura disponível */
+    height: 100vh; /* Garantir que ocupe toda a altura da tela */
+    box-sizing: border-box;
+  }
+  
+  .title {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-top: 30px; /* Aumentei o espaço acima do título */
+    margin-bottom: 10px; /* Diminui o espaço abaixo do título */
+  }
+
+  .subtitle {
+    color: white;
+  }
+
+  .texto-explicativo {
+    padding-top: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 23px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #fff;
+  }
+  
+  .line {
+    width: 90%;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 10px; /* Diminui o espaço abaixo da linha */
+  }
+  
+  .page-indicators {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .page-indicator {
+    width: 100px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #a9a9a9;
+  }
+  
+  .page-indicator.active {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .page-indicator.page-active {
+    background-color: #EB5694;
+  }
+
+  .page-indicator.page-inactive {
+    background-color: #EB5694;
+  }
+
+  .page-indicator.desativ {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  
+  .instrucoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; /* Aumentei o espaçamento para empurrar mais para baixo */
+    font-size: 20px; /* Aumentei o tamanho da fonte para deixar o texto maior */
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px; /* Aumentei o espaço entre as instruções */
+  }
+  
+  .step-icon {
+    margin-top: 50px;
+    width: 255px; /* Aumentei o tamanho da imagem */
+    height: 200px; /* Aumentei o tamanho da imagem */
+    margin-bottom: 20px; /* Aumentei o espaço entre a imagem e o texto */
+  }
+  
+  .seta {
+    font-size: 36px; /* Aumentei o tamanho da seta para deixá-la mais visível */
+    color: white;
+    margin: 0 15px; /* Aumentei o espaço entre as setas */
+  }
+
+  .step-text {
+    font-family: 'Francois One', sans-serif; /* Definindo a fonte Francois One */
+  font-size: 30px; /* Ajuste o tamanho conforme necessário */
+  color: #fff; /* Cor do texto */
+  font-weight: 400; 
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bottom-left-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .start-button {
+    background-color: #EB5694;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .start-button:hover {
+    background-color: #747373;
+  }
